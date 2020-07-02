@@ -1,0 +1,12 @@
+.Help {
+    padding: 1em;
+    bottom: 0;
+}
+
+.Help ul {
+    list-style-type: none;
+}
+
+.Help li {
+    margin: 1em;
+}

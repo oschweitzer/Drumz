@@ -1,0 +1,76 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+.AppHeader {
+    background-color: royalblue;
+    color: white;
+    padding: .5em;
+}
+
+.MainTitle {
+    margin-left: 1%;
+}
+
+.MainContent {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    flex-grow: 2;
+}
+
+.Button {
+    font-size: 1.5em;
+    padding: .5em 2em;
+    color: white;
+    background-color: #444444;
+    border: 1px solid black;
+    box-shadow: 3px 3px 2px black;
+}
+
+.Button:hover {
+    background-color: royalblue;
+    border: 1px solid black;
+    box-shadow: 3px 3px 2px black;
+}
+
+.HelpButton {
+    font-weight: bold;
+    padding: .5em 2em;
+    width: 100%;
+    color: white;
+    background-color: #76a912;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    animation: shadow-pulse 1s infinite;
+}
+
+.HelpButton:hover {
+    background-color: limegreen;
+}
+
+.HelpButton.active {
+    background-color: darkred;
+    animation: unset;
+}
+
+.HelpButton.active:hover {
+    background-color: red;
+}
+
+@keyframes shadow-pulse
+{
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+    }
+}

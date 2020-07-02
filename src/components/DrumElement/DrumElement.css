@@ -1,0 +1,20 @@
+.DrumElement {
+    padding: 2em 4em;
+    margin: 0.5em;
+    background-color: white;
+    box-shadow: 3px 3px 2px 1px #444444;
+    border: 1px solid #CCCCCC;
+}
+
+.DrumElement:hover {
+    color: white;
+    background-color: royalblue;
+    border-color: royalblue;
+}
+
+.DrumElement:active,
+.DrumElement.active {
+    border-color: #444444;
+    color: white;
+    background-color: #444444;
+}
